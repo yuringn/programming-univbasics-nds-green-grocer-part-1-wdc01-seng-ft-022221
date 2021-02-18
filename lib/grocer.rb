@@ -22,9 +22,8 @@ def find_item_by_name_in_collection(name, collection)
 
   def consolidate_cart(cart)
     new_array = []
-  i = 0
-  while i < cart.length do
-    new_item = find_item_by_name_in_collection(cart[i][:item], new_array)
+  cart.map do |i|
+    new_item = find_item_by_name_in_collection(i[:item], new_array)
   if new_item != nil
     new_item[:count] += 1
   else
