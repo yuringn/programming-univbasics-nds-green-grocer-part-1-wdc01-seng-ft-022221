@@ -34,9 +34,10 @@ def find_item_by_name_in_collection(name, collection)
       :clearance => cart[i][:clearance],
       :count => 1
     }
-    new_array << new_item
+
   end
     i +=1
+    new_array << new_item
   end
   p new_array
   end
