@@ -28,9 +28,9 @@ def find_item_by_name_in_collection(name, collection)
     new_item[:count] += 1
   else
     new_item = {
-      :item => cart[i][:item],
-      :price => cart[i][:price],
-      :clearance => cart[i][:clearance],
+      :item => i[:item],
+      :price =>i[:price],
+      :clearance => i[:clearance],
       :count => 1
     }
   end
